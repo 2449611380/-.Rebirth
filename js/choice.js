@@ -1,6 +1,7 @@
 class Choice {
     constructor() {
         this.SelectNumBer = 0;
+        this.homeSelect();
     };
 
     homeSelect() {
