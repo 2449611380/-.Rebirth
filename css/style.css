@@ -1,0 +1,175 @@
+@font-face {
+  font-family: YYXDQ;
+  src: url(../font/simkai.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: YYXDQ;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  background-color: #3f2c57;
+}
+
+.app {
+  width: 600px;
+  height: 480px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 10px 10px 100px black;
+          box-shadow: 10px 10px 100px black;
+  overflow: hidden;
+  background-color: black;
+}
+
+.app .page {
+  width: 100%;
+  height: 100%;
+}
+
+.app .startGame-page img {
+  width: 100%;
+}
+
+.app .home-page .home_animate {
+  position: absolute;
+}
+
+.app .home-page .home_animate:nth-child(1) {
+  left: -20px;
+}
+
+.app .home-page .home_animate:nth-child(2) {
+  left: -70px;
+}
+
+.app .home-page .home_animate:nth-child(3) {
+  left: -119px;
+}
+
+.app .home-page .home_animate:nth-child(4) {
+  left: -300px;
+}
+
+.app .home-page .home_animate:nth-child(5) {
+  left: -300px;
+}
+
+.app .home-page .home_animate:nth-child(6) {
+  opacity: 0;
+  left: 300px;
+  top: 60px;
+}
+
+.app .home-page .logo {
+  opacity: 0;
+  top: 40px;
+  right: 25px;
+  position: absolute;
+}
+
+.app .home-page .main_home_select {
+  width: 210px;
+  height: 225px;
+  position: absolute;
+  background-image: url(../images/Titles/border.png);
+  background-size: 100% 100%;
+  right: 30px;
+  top: 140px;
+  opacity: 0;
+}
+
+.app .home-page .main_home_select li {
+  color: white;
+  text-shadow: skyblue 0 0 4px;
+  -webkit-text-stroke: .2px skyblue;
+  font-size: 20px;
+  margin: 17px 15px 0;
+  position: relative;
+}
+
+.app .home-page .main_home_select li div {
+  width: 50%;
+  height: 1px;
+  border-radius: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaa49), to(#7a7a7a));
+  background-image: linear-gradient(#ffaa49, #7a7a7a);
+  position: absolute;
+  opacity: .7;
+}
+
+.app .home-page .main_home_select li:nth-child(2) {
+  left: 30px;
+}
+
+.app .home-page .main_home_select li:nth-child(2) .hr {
+  left: -5px;
+}
+
+.app .home-page .main_home_select li:nth-child(3) {
+  left: 40px;
+}
+
+.app .home-page .main_home_select li:nth-child(3) .hr {
+  width: 60%;
+  left: -5px;
+}
+
+.app .home-page .main_home_select li:nth-child(4) {
+  left: 55px;
+}
+
+.app .home-page .main_home_select li:nth-child(4) .hr {
+  left: -5px;
+}
+
+.app .home-page .main_home_select li:nth-child(5) {
+  left: 70px;
+}
+
+.app .home-page .main_home_select li:nth-child(5) .hr {
+  width: 30%;
+  left: -10px;
+}
+
+.app .home-page .main_home_select .home_select {
+  text-shadow: 0 0 8px #fffb00;
+  color: #fff6c1;
+  -webkit-text-stroke: 0.3px #fffb00;
+}
+
+.app .home-page .son_select {
+  width: 296px;
+  height: 180px;
+  background-image: url(../images/Titles/son_select.png);
+  position: absolute;
+  background-size: 100% 100%;
+  top: 20px;
+  left: 10px;
+  color: white;
+}
+
+.app .home-page .son_select ul {
+  width: 100%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=style.css.map */

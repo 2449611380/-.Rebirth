@@ -1,0 +1,150 @@
+@font-face {
+    font-family: YYXDQ;
+    src: url(../font/simkai.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: YYXDQ;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    background-color: rgb(63, 44, 87);
+}
+
+.app {
+    width: 600px;
+    height: 480px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 100px rgb(0, 0, 0);
+    overflow: hidden;
+    background-color: black;
+    .page {
+        width: 100%;
+        height: 100%;
+    }
+    .startGame-page {
+        img {
+            width: 100%;
+        }
+    }
+    .home-page {
+        .home_animate {
+            position: absolute;
+            &:nth-child(1) {
+                left: -20px;
+            }
+            &:nth-child(2) {
+                left: -70px;
+            }
+            &:nth-child(3) {
+                left: -119px;
+            }
+            &:nth-child(4) {
+                left: -300px;
+            }
+            &:nth-child(5) {
+                left: -300px;
+            }
+            &:nth-child(6) {
+                opacity: 0;
+                left: 300px;
+                top: 60px;
+            }
+        }
+        .logo {
+            opacity: 0;
+            top: 40px;
+            right: 25px;
+            position: absolute;
+        }
+        .main_home_select {
+            width: 210px;
+            height: 225px;
+            position: absolute;
+            background-image: url(../images/Titles/border.png);
+            background-size: 100% 100%;
+            right: 30px;
+            top: 140px;
+            opacity: 0;
+            li {
+                color: white;
+                text-shadow: skyblue 0 0 4px;
+                -webkit-text-stroke: .2px skyblue;
+                font-size: 20px;
+                margin: 17px 15px 0;
+                position: relative;
+                div {
+                    width: 50%;
+                    height: 1px;
+                    border-radius: 100%;
+                    background-image: linear-gradient(rgb(255, 170, 73), rgb(122, 122, 122));
+                    position: absolute;
+                    opacity: .7;
+                }
+                &:nth-child(2) {
+                    left: 30px;
+                    .hr {
+                        left: -5px;
+                    }
+                }
+                &:nth-child(3) {
+                    left: 40px;
+                    .hr {
+                        width: 60%;
+                        left: -5px;
+                    }
+                }
+                &:nth-child(4) {
+                    left: 55px;
+                    .hr {
+                        left: -5px;
+                    }
+                }
+                &:nth-child(5) {
+                    left: 70px;
+                    .hr {
+                        width: 30%;
+                        left: -10px;
+                    }
+                }
+            }
+            .home_select {
+                text-shadow: 0 0 8px rgb(255, 251, 0);
+                color: rgb(255, 246, 193);
+                -webkit-text-stroke: .3px rgb(255, 251, 0);
+            }
+        }
+        .son_select {
+            width: 296px;
+            height: 180px;
+            background-image: url(../images/Titles/son_select.png);
+            position: absolute;
+            background-size: 100% 100%;
+            top: 20px;
+            left: 10px;
+            color: white;
+            ul {
+                width: 100%;
+                float: left;
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 30px;
+            }
+        }
+    }
+    // .game-page {
+    // }
+}
+
+// 1683798007
