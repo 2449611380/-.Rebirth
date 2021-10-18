@@ -14,8 +14,8 @@
 <body>
 
     <div class="app">
-        <div class="startGame-page page" style="display: none;">
-            <!-- <div class="startGame-page page"> -->
+        <!-- <div class="startGame-page page" style="display: none;"> -->
+        <div class="startGame-page page">
             <img src="./images/Image1.png" alt="play" class="play_img">
             <img src="./images/66.jpg" alt="66" class="_play_img" style="display: none;">
         </div>
@@ -53,20 +53,20 @@
 
             <div class="son_select">
                 <ul>
-                    <li>窗口设置</li>
-                    <li>全屏</li>
-                    <li>窗口</li>
+                    <li class="father_select Select">窗口设置</li>
+                    <li class="select__ Select_son unified">全屏</li>
+                    <li class="select__ unified">窗口</li>
                 </ul>
 
                 <ul>
-                    <li>BGM循环位置</li>
+                    <li class="father_select">BGM循环位置</li>
                     <li></li>
-                    <li>160</li>
+                    <li class="BGMNUM unified">160</li>
                 </ul>
 
                 <ul>
-                    <li>确定</li>
-                    <li>取消</li>
+                    <li class="unified T_rue">确定</li>
+                    <li class="F_alsh">取消</li>
                 </ul>
             </div>
         </div>
@@ -76,7 +76,8 @@
         </div>
     </div>
 
-    <!-- <audio src="./audio/BGM/mio/sakura_2.mp3" autoplay class="theme"></audio> -->
+    <p id="course">游戏操作: ↑、↓ 、← 、→ 、Space 、Esc</p>
+    <audio src="./audio/BGM/mio/sakura_2.mp3" autoplay class="theme"></audio>
 
     <script src="js/choice.js"></script>
     <script src="js/view.js"></script>

@@ -20,6 +20,17 @@ body {
   background-color: #3f2c57;
 }
 
+#course {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
+  color: white;
+  font-weight: 100;
+  font-size: 18px;
+}
+
 .app {
   width: 600px;
   height: 480px;
@@ -31,7 +42,7 @@ body {
   -webkit-box-shadow: 10px 10px 100px black;
           box-shadow: 10px 10px 100px black;
   overflow: hidden;
-  background-color: black;
+  background-color: white;
 }
 
 .app .page {
@@ -159,6 +170,7 @@ body {
   top: 20px;
   left: 10px;
   color: white;
+  display: none;
 }
 
 .app .home-page .son_select ul {
@@ -171,5 +183,18 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-top: 30px;
+}
+
+.app .home-page .son_select ul li {
+  background-image: url(../images/Titles/son_select_border.png);
+  background-size: 0% 0%;
+  padding: 3px 5px 3px 5px;
+}
+
+.app .home-page .son_select ul .Select,
+.app .home-page .son_select ul .Select_son {
+  background-image: url(../images/Titles/son_select_border.png);
+  background-size: 99% 99%;
+  padding: 3px 5px 3px 5px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,7 @@ class Frame {
     constructor() {};
 
     start_animate() {
+        let stop = true;
         setTimeout(() => {
             $('.home_animate').animate({
                 left: 0
@@ -10,7 +11,10 @@ class Frame {
                     top: 100,
                     opacity: 1
                 }, 1200, () => {
-                    let choice = new Choice();
+                    if (stop) {
+                        stop = !stop;
+                        new Choice();
+                    }
                 });
                 $('.main_home_select').animate({
                     top: 225,
@@ -18,6 +22,7 @@ class Frame {
                 }, 1000);
             });
         }, 1000);
+
     };
 
 
